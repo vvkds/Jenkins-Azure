@@ -16,7 +16,7 @@ pipeline {
           job('AzCommand') {
             steps {
                 azCommands('Azure-lab-sp', 
-                        ['az vm create -n MyLinuxVM -g DevOps-RG --image UbuntuLTS --data-disk-sizes-gb 10 20 ])
+                        ['az vm create -n MyLinuxVM -g DevOps-RG ])
                       }
                  }
                }
